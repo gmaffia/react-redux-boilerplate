@@ -1,0 +1,46 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix"
+
+body 
+  font-family: "Work Sans", sans-serif
+
+header
+  background: url("../images/pixel_weave.png") repeat
+  font-size: 40px  
+  padding: 10px 0
+  .title
+    display: block
+    text-transform: uppercase
+    text-align: center
+    border: 2px solid #000   
+    width: 65%
+    margin: 0 auto
+  nav    
+    font-size: 20px
+    width: 20%
+    display: block
+    margin: 10px auto
+    ul
+      list-style-type: none
+      @include clearfix()
+    li
+      border: 1px solid black
+      float: left
+      font-weight: bold
+      margin: 0 5px
+      padding: 0 5px
+
+a
+  color: #000    
+  &.active
+    color: #6a6a6a
+    text-decoration: underline
+  &:hover
+    color: #000
+    text-decoration: none
+
+
+content
+  font-size: 20px
+  width: 60%
+  display: block
+  margin: 0 auto
